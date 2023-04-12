@@ -1,0 +1,7 @@
+.row {
+  color: #787878;
+}
+
+.row:nth-child(2n) {
+  background-color: #d3d3d3;
+}
