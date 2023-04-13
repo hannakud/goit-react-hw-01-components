@@ -4,12 +4,7 @@ import css from './FriendListItem.module.css';
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={css.item}>
-      <span
-        className={css.status}
-        style={{ backgroundColor: isOnline ? 'green' : 'red' }}
-      >
-        {isOnline}
-      </span>
+      <span className={isOnline ? css.online : css.offline}>{isOnline}</span>
       <img className={css.avatar} src={avatar} alt={name} />
       <span className={css.name}>{name}</span>
     </li>
